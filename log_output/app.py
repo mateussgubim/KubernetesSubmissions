@@ -2,16 +2,11 @@ import uuid
 import time
 from datetime import datetime
 
-def generate_uuid():
-    random_string = uuid.uuid4()
+def generate_output():
+    string = f"{datetime.now(tz=None)}: {uuid.uuid4()}"
 
-    print(random_string)
+    print(string)
 
-generate_uuid()
-
-def date():
-    date_string = datetime.now(tz=None)
-    
-    print(date_string)
-
-date()
+while True:
+   generate_output()
+   time.sleep(5)
