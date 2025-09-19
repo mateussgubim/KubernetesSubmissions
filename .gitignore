@@ -1,1 +1,2 @@
-./log_output/venv
+log_output/venv
+.gitignore
