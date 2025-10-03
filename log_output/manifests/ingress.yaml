@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: hashgen-ing
+  namespace: hashgen
   annotations:
     nginx.ingress.kubernetes.io/rewrite-targe: /
 spec:

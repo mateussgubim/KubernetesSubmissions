@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hash-generator
+  namespace: hashgen
   labels:
     app: hashgen
 spec:
