@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hash-generator
+  labels:
+    app: hashgen
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hashgen
+  template:
+    metadata:
+      labels:
+        app: hashgen
+    spec:
+      containers:
+        - name: hashgen
+          image: mateuss08/hashgen:latest
+          ports:
+            - containerPort: 80
